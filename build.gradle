@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'jetty'
+
+repositories {
+    mavenCentral()
+}
+
+
+
+version = '0.1.0'
+
+sourceCompatibility = 1.7
+
+dependencies {
+    compile 'org.hibernate.ogm:hibernate-ogm-infinispan:4.1.0.CR1'
+    compile 'org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final'
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+
+
